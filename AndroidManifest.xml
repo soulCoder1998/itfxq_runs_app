@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.itfxq.runs">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Goodssapp">
+        <activity android:name=".activity.MyDoOrderActivity" android:parentActivityName=".activity.MyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.MyDoOrderActivity" />
+        </activity>
+        <activity android:name=".activity.MySendOrderActivity"
+            android:parentActivityName=".activity.MyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.MySendOrderActivity" />
+        </activity>
+        <activity
+            android:name=".activity.DoActivity"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.DoActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SendActivity"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.SendActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MyActivity"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.OrderActivity"
+            android:parentActivityName=".activity.GoodsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.GoodsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.GoodsActivity"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MyOrderActivity"
+            android:parentActivityName=".activity.MyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.itfxq.runs.activity.MyActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.RegActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
